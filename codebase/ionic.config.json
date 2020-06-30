@@ -1,0 +1,8 @@
+{
+  "name": "flames",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}

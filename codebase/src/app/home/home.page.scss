@@ -1,0 +1,85 @@
+#container {
+  text-align: center;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+.magicContent {
+  text-align: center;
+}
+
+.inputContent {
+  text-align: center;  
+}
+
+.subtitle {
+  font-size: xx-small;
+}
+
+.imageContent {
+  height: 130px;
+  width: 130px;
+  margin:0 auto;
+}
+
+.layoutContent {
+  --ion-background-color:rgb(255, 239, 239);
+  
+}
+
+ion-header{
+  --ion-background-color:rgb(231, 100, 100);  
+}
+
+ion-title{
+  color: white;
+}
+
+h1 {
+  font-family: fantasy;
+}
+
+h5 {
+  font-family: 'Trebuchet MS';
+}
+
+.strikediag {
+  background: linear-gradient(to left top, transparent 37.75%, currentColor 49.5%, currentColor 50.5%, transparent 52.25%);
+}
+.withpadding {
+  padding: 0 0.15em;
+}
+
+.inputStyle {
+  width: 200px;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.buttonStyle {
+  width: 200px;
+}

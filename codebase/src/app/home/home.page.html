@@ -1,0 +1,55 @@
+<ion-header [translucent]="true">
+  <!-- Default title -->
+  <ion-toolbar>
+    <ion-title>FLAMES</ion-title>
+    <ion-title class="subtitle">THE 90'S COMPATIBILITY CHECK</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="layoutContent">
+  <br>
+  <div class="inputContent">
+    <input class="w3-input w3-border inputStyle" [(ngModel)]="userName"
+      (ngModelChange)="userName = $event.toUpperCase()" placeholder="Your name" (ngModelChange)="dataChanged($event)">
+
+
+    <input class="w3-input w3-border inputStyle" [(ngModel)]="partnerName"
+      (ngModelChange)="partnerName = $event.toUpperCase()" placeholder="Partner's name" (ngModelChange)="dataChanged($event)">
+    <div class="ion-activatable ripple-parent">
+      <ion-button class="buttonStyle" color="danger" (click)="findCompatibility()">CHECK</ion-button>
+      <ion-ripple-effect></ion-ripple-effect>
+    </div>
+  </div>
+
+  <div *ngIf="flag" class="magicContent">
+
+    <ion-text color="primary">
+      <h6>MAGIC NUMBER</h6>
+    </ion-text>
+    <ion-text color="danger">
+      <h2>{{magicNumber}}</h2>
+    </ion-text>
+    
+    <div>
+      <span [class]="flagF? 'strikediag': ''"> F </span>
+      <span [class]="flagL? 'strikediag': ''"> L </span>
+      <span [class]="flagA? 'strikediag': ''"> A </span>
+      <span [class]="flagM? 'strikediag': ''"> M </span>
+      <span [class]="flagE? 'strikediag': ''"> E </span>
+      <span [class]="flagS? 'strikediag': ''"> S </span>
+    </div>
+    
+    <ion-text color="primary">
+      <h6>YOU BOTH ARE GOING TO BE</h6>
+    </ion-text>
+    <br>
+    <div class="imageContent">
+      <ion-img src="assets/img/{{imageName}}"></ion-img>
+    </div>    
+    <ion-text color="danger">
+      <h2>{{relationship}}</h2>
+    </ion-text>
+  </div>
+  
+</ion-content>
+
